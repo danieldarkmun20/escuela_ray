@@ -13,11 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('lessons', function (Blueprint $table) {
-            $table->id();
-            $table->string("path")->nullable();
-            $table->enum("nivel", ["1", "2", "3"]);
-            $table->timestamps();
+        Schema::table('questions', function (Blueprint $table) {
+            $table->string("correct_answer")->nullable();
         });
     }
 
@@ -28,6 +25,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lessons');
+        Schema::table('questions', function (Blueprint $table) {
+            $table->dropColumn("correct_answer");
+        });
     }
 };

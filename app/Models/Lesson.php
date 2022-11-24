@@ -8,4 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Lesson extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'path',
+        'nivel',
+    ];
+    
+    public function questions()
+    {
+        return $this->hasMany('App\Models\Question');
+    }
+
 }

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdministratorController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\LessonController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TeacherController;
 use Illuminate\Http\Request;
@@ -25,7 +26,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::resource("administrators", AdministratorController::class);
 Route::resource("teachers", TeacherController::class);
 Route::resource("students", StudentController::class);
+Route::resource("lessons", LessonController::class);
 Route::get("students-teacher/{id}", [StudentController::class, "studentsByTeacher"]);
+Route::post("reply/{id}", [LessonController::class, "reply"]);
 Route::delete("students-teacher/{id}", [StudentController::class, "deleteStudentsByTeacher"]);
 Route::post("students/teacher", [StudentController::class, "addStudentByTeacher"]);
 Route::group(['middleware' => ['auth:sanctum']], function () {
