@@ -118,8 +118,8 @@ class LessonController extends Controller
         }
         // $auth_user = Auth()->user();
         $user = User::where("id", $user)->first();
-        $user->nivel = $lesson->nivel;
+        $user->nivel = $lesson->nivel + 1;
         $user->save();
-        return $this->successResponse(null, __('Se ha realizado con exito el registro'));
+        return $this->successResponse($user, __('Se ha realizado con exito el registro'));
     }
 }
