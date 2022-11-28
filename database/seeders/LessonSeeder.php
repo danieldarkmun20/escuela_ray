@@ -21,5 +21,11 @@ class LessonSeeder extends Seeder
             "path" => "lesson_1_video.mp4",
             "preview_path" => "lesson_1_img.jpeg",
         ]);
+        Lesson::create([
+            "nivel" => 2,
+            "title" => "LESSON 2",
+            "path" => "lesson_1_video.mp4",
+            "preview_path" => "lesson_1_img.jpeg",
+        ]);
     }
 }

@@ -53,6 +53,7 @@ class StudentController extends Controller
             'user_id' => $user->id,
             'teacher_id' => $request->teacher_id,
         ]);
+        $student = Student::where("id", $student->id)->with("user")->first();
 
         return $student ? $this->successResponse($student, __('Se ha realizado con exito el registro')) : $this->customValidationErrorResponse(['general' => [__('Algo salió mal al generar el usuario.')]], __('Algo salió mal'));
     }
