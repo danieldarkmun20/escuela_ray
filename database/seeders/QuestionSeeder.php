@@ -16,52 +16,52 @@ class QuestionSeeder extends Seeder
     public function run()
     {
         Question::create([
-            "text" => "Pregunta 1",
+            "text" => "1. ¿Quién debe hacerse cargo de la conservación y protección del medio ambiente?",
             "lesson_id" => 1,
             "correct_answer" => "1"
         ]);
         Question::create([
-            "text" => "Pregunta 2",
+            "text" => "2. ¿Qué es el medio ambiente?",
             "lesson_id" => 1,
             "correct_answer" => "5"
         ]);
         Question::create([
-            "text" => "Pregunta 3",
+            "text" => "3. ¿Porque es importante cuidar el medio ambiente?",
             "lesson_id" => 1,
             "correct_answer" => "9"
         ]);
         Question::create([
-            "text" => "Pregunta 4",
+            "text" => "4. ¿Qué tareas puedes hacer para proteger el medio ambiente?",
             "lesson_id" => 1,
             "correct_answer" => "13"
         ]);
         Question::create([
-            "text" => "Pregunta 5",
+            "text" => "5. ¿Como se contamina el medio ambiente? ",
             "lesson_id" => 1,
             "correct_answer" => "17"
         ]);
         Question::create([
-            "text" => "Pregunta 6",
+            "text" => "6. ¿Que es la contaminación? ",
             "lesson_id" => 1,
             "correct_answer" => "21"
         ]);
         Question::create([
-            "text" => "Pregunta 7",
+            "text" => "7. De estas acciones, ¿cuál NO protege al medio ambiente?",
             "lesson_id" => 1,
             "correct_answer" => "25"
         ]);
         Question::create([
-            "text" => "Pregunta 8",
+            "text" => "8. ¿Que son los hábitos proambientales?",
             "lesson_id" => 1,
             "correct_answer" => "29"
         ]);
         Question::create([
-            "text" => "Pregunta 9",
+            "text" => "9. ¿Cuál de estos hábitos ayuda a conservar medio ambiente?",
             "lesson_id" => 1,
             "correct_answer" => "33"
         ]);
         Question::create([
-            "text" => "Pregunta 10",
+            "text" => "10. ¿A dónde va a parar el humo que sale de los vehículos, chimeneas e industrias?",
             "lesson_id" => 1,
             "correct_answer" => "37"
         ]);
