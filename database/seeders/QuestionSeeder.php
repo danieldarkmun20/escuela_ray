@@ -18,12 +18,12 @@ class QuestionSeeder extends Seeder
         Question::create([
             "text" => "1. ¿Quién debe hacerse cargo de la conservación y protección del medio ambiente?",
             "lesson_id" => 1,
-            "correct_answer" => "1"
+            "correct_answer" => "3"
         ]);
         Question::create([
             "text" => "2. ¿Qué es el medio ambiente?",
             "lesson_id" => 1,
-            "correct_answer" => "5"
+            "correct_answer" => "8"
         ]);
         Question::create([
             "text" => "3. ¿Porque es importante cuidar el medio ambiente?",
@@ -33,7 +33,7 @@ class QuestionSeeder extends Seeder
         Question::create([
             "text" => "4. ¿Qué tareas puedes hacer para proteger el medio ambiente?",
             "lesson_id" => 1,
-            "correct_answer" => "13"
+            "correct_answer" => "16"
         ]);
         Question::create([
             "text" => "5. ¿Como se contamina el medio ambiente? ",
@@ -48,22 +48,22 @@ class QuestionSeeder extends Seeder
         Question::create([
             "text" => "7. De estas acciones, ¿cuál NO protege al medio ambiente?",
             "lesson_id" => 1,
-            "correct_answer" => "25"
+            "correct_answer" => "28"
         ]);
         Question::create([
             "text" => "8. ¿Que son los hábitos proambientales?",
             "lesson_id" => 1,
-            "correct_answer" => "29"
+            "correct_answer" => "30"
         ]);
         Question::create([
             "text" => "9. ¿Cuál de estos hábitos ayuda a conservar medio ambiente?",
             "lesson_id" => 1,
-            "correct_answer" => "33"
+            "correct_answer" => "34"
         ]);
         Question::create([
             "text" => "10. ¿A dónde va a parar el humo que sale de los vehículos, chimeneas e industrias?",
             "lesson_id" => 1,
-            "correct_answer" => "37"
+            "correct_answer" => "38"
         ]);
     }
 }
