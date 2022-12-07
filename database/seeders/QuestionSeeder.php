@@ -65,5 +65,56 @@ class QuestionSeeder extends Seeder
             "lesson_id" => 1,
             "correct_answer" => "38"
         ]);
+        //lesson 2
+        Question::create([
+            "text" => "1. ¿Qué es el calentamiento global?",
+            "lesson_id" => 2,
+            "correct_answer" => "42"
+        ]);
+        Question::create([
+            "text" => "2. ¿Qué provoca el calentamiento global?",
+            "lesson_id" => 2,
+            "correct_answer" => "47"
+        ]);
+        Question::create([
+            "text" => "3. Una de estas acciones ayuda a reducir el calentamiento global, ¿cuál?",
+            "lesson_id" => 2,
+            "correct_answer" => "51"
+        ]);
+        Question::create([
+            "text" => "4. ¿Qué conocida e importante ONG, con 4,7 millones de miembros, cuida el medio ambiente?",
+            "lesson_id" => 2,
+            "correct_answer" => "52"
+        ]);
+        Question::create([
+            "text" => "5. ¿Qué de coches tiene previsto Europa prohibir vender a partir de 2035?",
+            "lesson_id" => 2,
+            "correct_answer" => "55"
+        ]);
+        Question::create([
+            "text" => "6. ¿Qué es el greenwashing?",
+            "lesson_id" => 2,
+            "correct_answer" => "57"
+        ]);
+        Question::create([
+            "text" => "7. En 2016, 200 Estados firmaron un acuerdo para reducir las emisiones de CO2, ¿cómo se llama ese acuerdo?",
+            "lesson_id" => 2,
+            "correct_answer" => "61"
+        ]);
+        Question::create([
+            "text" => "8. ¿Cuál de estos es un combustible fósil?",
+            "lesson_id" => 2,
+            "correct_answer" => "65"
+        ]);
+        Question::create([
+            "text" => "9. ¿Qué niña fue invitada por la ONU para hablar sobre el calentamiento global?",
+            "lesson_id" => 2,
+            "correct_answer" => "67"
+        ]);
+        Question::create([
+            "text" => "10. ¿En qué contenedor tirarías un brik de leche ya usado para reciclarlo?",
+            "lesson_id" => 2,
+            "correct_answer" => "72"
+        ]);
     }
 }

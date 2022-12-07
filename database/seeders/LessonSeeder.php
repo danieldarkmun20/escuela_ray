@@ -25,7 +25,7 @@ class LessonSeeder extends Seeder
             "nivel" => 2,
             "title" => "LESSON 2",
             "path" => "lesson_1_video.mp4",
-            "preview_path" => "lesson_1_img.png",
+            "preview_path" => "lesson_2_img.png",
         ]);
     }
 }
